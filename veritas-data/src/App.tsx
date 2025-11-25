@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Card from './components/Card.tsx';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main className='main'>
+        <Card datatype='Localização'>Pedimos acesso à sua localização para oferecer uma experiência mais precisa e personalizada. Com esses dados, conseguimos identificar sua região,
+          ajustar informações relevantes para sua área e melhorar a precisão dos serviços exibidos.
+          Não compartilhamos sua localização com terceiros e você pode revogar essa permissão a qualquer momento.
+        </Card>
+        <Card datatype='Voz'>Pedimos acesso à sua voz para permitir recursos que dependem de áudio, como comandos por voz,
+          identificação rápida do usuário e melhoria na acessibilidade.
+          Esses dados ajudam nosso sistema a entender melhor suas solicitações e oferecer uma experiência mais natural e eficiente.
+          Sua voz não é compartilhada com terceiros e só é utilizada para as finalidades claramente informadas.
+          Você pode desativar essa permissão a qualquer momento.
+        </Card>
+      </main>
     </>
   )
 }
 
-export default App
+export default App;
