@@ -15,6 +15,11 @@ function App() {
           Sua voz não é compartilhada com terceiros e só é utilizada para as finalidades claramente informadas.
           Você pode desativar essa permissão a qualquer momento.
         </Card>
+        <Card datatype='Biometria'>Pedimos acesso aos seus dados biométricos, como impressão digital ou reconhecimento facial, para oferecer um processo de autenticação mais seguro e rápido.
+          Esses dados permitem confirmar sua identidade de forma confiável, protegendo sua conta contra acessos não autorizados.
+          Suas informações biométricas são armazenadas com segurança, não são compartilhadas com terceiros e só são utilizadas para verificação de identidade.
+          Você pode revogar essa permissão sempre que desejar.
+        </Card>
       </main>
     </>
   )
